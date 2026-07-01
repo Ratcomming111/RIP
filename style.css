@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: #2e3342;
+  font-family: sans-serif;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* 작은 방 */
+.room {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #aaa;
+  background: #3a3f4d;
+}
+
+/* 오브젝트 */
+.obj {
+  position: absolute;
+  background: #666;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 상태창 */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  color: white;
+  padding: 12px;
+  z-index: 999999;
+  display: none;
+}
